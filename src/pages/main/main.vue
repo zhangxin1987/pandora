@@ -1,10 +1,12 @@
 <template>
-    <div>
-        <van-button type="warning">警告按钮</van-button>
+  <div>
+    <van-button type="warning">
+      警告按钮
+    </van-button>
 
 
-        <van-button>按钮</van-button>
-    </div>
+    <van-button>按钮</van-button>
+  </div>
 </template>
 <script>
 export default {
