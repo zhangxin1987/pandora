@@ -1,8 +1,18 @@
 import Vue from 'vue'
-import App from './App.vue'
+import Vant from 'vant';
 
-Vue.config.productionTip = false
+import VueRouter from 'vue-router';
+import App from './basic/app';
 
+Vue.config.productionTip = false;
+// 路由
+import router from './router';
+// 组件
+// import './components';
+Vue.use(Vant);
+// 引用router
+Vue.use(VueRouter);
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  router,
+  render: h => h(App)
+}).$mount('#app');
